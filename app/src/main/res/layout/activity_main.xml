@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="221dp"
+                android:layout_height="91dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logook" />
+            <TextView
+                android:textColor="#00846E"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:text="Dành cho bán hàng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:onClick="Addfragment"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/theme1"
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_action_earth"
+                    android:text="Kết nối online" />
+                <Button
+                    android:onClick="Addfragment"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/theme1"
+                    android:drawableLeft="@drawable/ic_action_screen"
+                    android:id="@+id/btn2"
+                    android:text="Kết nối với offline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/theme_button">
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_info"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Quên Mật Khẩu"
+                    android:textColor="#00846E"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
